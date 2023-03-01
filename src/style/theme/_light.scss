@@ -1,17 +1,17 @@
 @mixin pallet-light {
-  --primary: #FFF;
-  --primary-300: #E3EEFF;
-  --primary-400: #EDE3FF;
-  --primary-600: #C6C6C6;
+  --primary: #fff;
+  --primary-300: #e3eeff;
+  --primary-400: #ede3ff;
+  --primary-600: #c6c6c6;
   --secondary: #000;
   --secondary-200: #292929;
-  --secondary-400: #4A4962;
-  --tertiary: #5B5B5B;
+  --secondary-400: #4a4962;
+  --tertiary: #5b5b5b;
   --tertiary-300: #333;
-  --tertiary-900: #978BAE;
-  --neutrel: #A0AAFF;
-  --danger: #C51339;
-  --relax: #FFE3EA;
+  --tertiary-900: #978bae;
+  --neutrel: #a0aaff;
+  --danger: #c51339;
+  --relax: #ffe3ea;
 }
 
 @media (prefers-color-scheme: light) {

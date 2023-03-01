@@ -1,17 +1,17 @@
 @mixin pallet-dark {
   --primary: rgb(36 34 34);
-  --primary-300: #7E838B;
-  --primary-400: #7A7386;
+  --primary-300: #7e838b;
+  --primary-400: #7a7386;
   --primary-600: #514242;
   --secondary: rgb(255 255 255);
-  --secondary-200: #ECE8E8;
-  --secondary-400: #A9A7DE;
-  --tertiary: #08426A;
+  --secondary-200: #ece8e8;
+  --secondary-400: #a9a7de;
+  --tertiary: #08426a;
   --tertiary-300: rgb(23 123 200);
-  --tertiary-900: #978BAE;
-  --neutrel: #A0AAFF;
-  --danger: #C51339;
-  --relax: #FFE3EA;
+  --tertiary-900: #978bae;
+  --neutrel: #a0aaff;
+  --danger: #c51339;
+  --relax: #ffe3ea;
 }
 
 @media (prefers-color-scheme: dark) {

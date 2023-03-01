@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "precommit": "lint-staged",
-    "lint": "eslint . --ext .vue,.js,.cjs,.ts --fix --ignore-path .gitignore",
+    "lint": "eslint . --ext .js, --fix --ignore-path .gitignore",
     "format": "prettier . --write"
   },
   "keywords": [],
