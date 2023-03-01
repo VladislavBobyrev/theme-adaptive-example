@@ -1,0 +1,9 @@
+@mixin container-fix {
+  width: 100%;
+  max-width: adaptiv-prop(1440, 280);
+  margin: 0 auto;
+}
+
+@mixin button {
+  cursor: pointer;
+}

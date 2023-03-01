@@ -1,0 +1,14 @@
+.page {
+  @include container-fix;
+
+  height: calc(var(--vh) * 100);
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: $primary;
+  color: $secondary;
+  gap: 2rem;
+}

@@ -1,0 +1,25 @@
+@mixin pallet-light {
+  --primary: #FFF;
+  --primary-300: #E3EEFF;
+  --primary-400: #EDE3FF;
+  --primary-600: #C6C6C6;
+  --secondary: #000;
+  --secondary-200: #292929;
+  --secondary-400: #4A4962;
+  --tertiary: #5B5B5B;
+  --tertiary-300: #333;
+  --tertiary-900: #978BAE;
+  --neutrel: #A0AAFF;
+  --danger: #C51339;
+  --relax: #FFE3EA;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    @include pallet-dark;
+  }
+}
+
+.theme-light {
+  @include pallet-light;
+}

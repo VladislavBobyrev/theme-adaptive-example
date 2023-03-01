@@ -1,0 +1,27 @@
+.main {
+  display: grid;
+  gap: 2rem;
+}
+
+.galery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, calc(50% - 1rem)));
+  gap: 1rem;
+}
+
+.card:nth-child(odd) {
+  background: $tertiary;
+}
+
+.card:nth-child(even) {
+  background: $tertiary-300;
+}
+
+.card__image {
+  width: 100%;
+  max-width: 50%;
+
+  &:hover {
+    animation: zoom 3s ease-in-out;
+  }
+}

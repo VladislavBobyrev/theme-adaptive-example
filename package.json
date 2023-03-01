@@ -1,0 +1,35 @@
+{
+  "name": "pre-commit-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "lint": "eslint . --ext .vue,.js,.cjs,.ts --fix --ignore-path .gitignore",
+    "format": "prettier . --write && stylelint **/*.scss --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "adaptiv theme and JQuery",
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-vue": "^9.9.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4",
+    "stylelint": "^15.2.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-order": "^6.0.2",
+    "stylelint-scss": "^4.4.0"
+  },
+  "lint-staged": {
+    "*.{js, ts, scss, html,md}": [
+      "eslint . --ext .vue,.js,.cjs,.ts --fix --ignore-path .gitignore",
+      "prettier . --write && stylelint **/*.scss --fix",
+      "git add ."
+    ]
+  }
+}
